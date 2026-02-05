@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niccolò Puccia — AI & Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">NP<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <header id="hero">
+    <canvas id="neural-bg"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Niccolò</h1>
+      <p class="hero-tagline">Computer Science Engineer &bull; DL Enthusiast &bull; Humanist</p>
+      <p class="hero-description">
+        I craft intelligent solutions at the intersection of
+        <span class="typed-wrapper"><span id="typed-text"></span><span class="cursor">|</span></span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── About ─── -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="images/profile.jpg" alt="Niccolò Puccia">
+        </div>
+        <div class="about-text">
+          <p class="about-lead">
+            Computer Science Engineering student at Politecnico di Milano with a passion for AI,
+            deep learning, and building innovative solutions that bridge technology and real-world impact.
+          </p>
+          <p>
+            Currently pursuing a double degree in Data Science at KTH Royal Institute of Technology in Stockholm.
+            Active member of the Novel, Emerging Computing System Technologies Laboratory, where I develop skills
+            in research, scientific writing, and critical thinking through hackathons and academic challenges.
+          </p>
+          <div class="about-details">
+            <div class="detail">
+              <span class="detail-label">University</span>
+              <span class="detail-value">Politecnico di Milano</span>
+            </div>
+            <div class="detail">
+              <span class="detail-label">Degree</span>
+              <span class="detail-value">BSc & MSc Computer Science Engineering</span>
+            </div>
+            <div class="detail">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Milan, Italy</span>
+            </div>
+            <div class="detail">
+              <span class="detail-label">Languages</span>
+              <span class="detail-value">Italian (native), English (C1)</span>
+            </div>
+          </div>
+          <a href="Niccolo_Puccia_CV.pdf" class="btn btn-primary" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Experience ─── -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Nov 2026 — Present</span>
+            <h3>Deep Learning Engineer</h3>
+            <h4>Rilemo</h4>
+            <p>Optimizing biomedical image synthesis through deep learning integration to enhance diagnostic accuracy for early-stage cerebral strokes.</p>
+            <div class="tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Medical Imaging</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Sept 2025 — Present</span>
+            <h3>Double Degree Student</h3>
+            <h4>EIT Digital Foundation</h4>
+            <p>As part of Europe's largest open innovation ecosystem, gaining business and entrepreneurial competencies complemented by technical knowledge, enabling the development and implementation of innovative market solutions.</p>
+            <div class="tags">
+              <span class="tag">Entrepreneurship</span>
+              <span class="tag">Innovation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Sept 2024 — Present</span>
+            <h3>Undergraduate Researcher</h3>
+            <h4>NECST Laboratory — Politecnico di Milano</h4>
+            <p>Gaining experience in research and education by mastering scientific writing, tackling challenges in hackathons, and broadening expertise in public speaking and critical thinking.</p>
+            <div class="tags">
+              <span class="tag">Research</span>
+              <span class="tag">Scientific Writing</span>
+              <span class="tag">Hackathons</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ─── -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/sanremo.jpg" alt="Sense_Pedal_Board presentation at Sanremo">
+          </div>
+          <div class="project-info">
+            <h3>Sense_Pedal_Board</h3>
+            <p>Wireless wearable device that captures musicians' foot gestures, enabling seamless changes to instrument sound while playing. Hosted complex ML model on resource-constrained Arduino. Presented at Casa Sanremo Invest during Festival di Sanremo 2025.</p>
+            <div class="tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Wearables</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/niccolopuccia/GuitarArduinoPedals" class="project-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">ATale</div>
+          </div>
+          <div class="project-info">
+            <h3>ATale</h3>
+            <p>Mobile application leveraging facial and object recognition to help Alzheimer's patients strengthen connections to memories at risk of fading away. Led a multidisciplinary team of students from various backgrounds.</p>
+            <div class="tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Mobile App</span>
+              <span class="tag">Healthcare</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/niccolopuccia/aTale" class="project-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">SICID Logs</div>
+          </div>
+          <div class="project-info">
+            <h3>SICID Logs Analysis</h3>
+            <p>Study on the impact of data mining and deep learning on judicial efficiency, focusing on case disposition times by analyzing log consistency within SICID, Italy's IT platform for managing civil litigation cases.</p>
+            <div class="tags">
+              <span class="tag">Data Mining</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Process Mining</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/niccolopuccia/Log_analysis_SICID" class="project-link" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ─── -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3>Languages & ML</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C / C++</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TensorFlow / Keras</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Scikit-learn</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Development & Data</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML / CSS / JS / PHP</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MySQL / PostgreSQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">NumPy / Pandas / OpenCV</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">VHDL / Verilog</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Google Colab</span>
+            <span class="skill-tag">Scientific Writing</span>
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Team Leadership</span>
+            <span class="skill-tag">Critical Thinking</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── The Journey ─── -->
+  <section id="journey">
+    <div class="container">
+      <h2 class="section-title">The Journey</h2>
+      <div class="photo-collage">
+        <div class="collage-photo"><img src="images/journey/photo1.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo2.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo3.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo4.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo5.png" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo6.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo7.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo8.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo9.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo10.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo11.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo12.jpg" alt="Journey photo"></div>
+        <div class="collage-photo"><img src="images/journey/photo13.jpg" alt="Journey photo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-intro">
+        I'm always open to discussing new opportunities, interesting projects, or just having a good conversation about AI and innovation.
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:niccolo.puccia@mail.polimi.it" class="contact-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>niccolo.puccia@mail.polimi.it</span>
+        </a>
+        <a href="https://www.linkedin.com/in/niccolo-puccia" class="contact-card" target="_blank" rel="noopener">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/niccolopuccia" class="contact-card" target="_blank" rel="noopener">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
