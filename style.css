@@ -344,14 +344,14 @@ section {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 350px 1fr;
   gap: 60px;
   align-items: start;
 }
 
 .about-photo {
-  width: 280px;
-  height: 340px;
+  width: 350px;
+  height: 420px;
   border-radius: var(--radius);
   position: relative;
   overflow: hidden;
