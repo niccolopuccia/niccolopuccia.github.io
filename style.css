@@ -65,16 +65,8 @@ img { max-width: 100%; display: block; }
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.logo .accent { color: var(--accent); }
 
 .nav-links {
   display: flex;
